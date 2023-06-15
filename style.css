@@ -1,0 +1,111 @@
+/* define variable */
+:root {
+  --color-white: #ffffff;
+  --color-black: #171817;
+  --color-green: #4c713c;
+  --color-blue: #495969;
+  --color-pink: #7a7a7a;
+}
+
+body {
+  margin: 0;
+
+  &.black,
+  &.green,
+  &.blue,
+  &.pink {
+    color: var(--color-white);
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  &.black {
+    background-color: var(--color-black);
+  }
+
+  &.green {
+    background-color: var(--color-green);
+  }
+
+  &.blue {
+    background-color: var(--color-blue);
+  }
+
+  &.pink {
+    background-color: var(--color-pink);
+  }
+}
+
+.eclipse {
+  background: var(--color-white);
+  width: 50%;
+  height: 15%;
+  opacity: 0.6;
+  filter: blur(265px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.container {
+  max-width: calc(100% - 32px);
+  margin-inline: auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.content,
+.product {
+  flex: 1;
+}
+
+.product-image {
+  display: none;
+}
+
+.product-image.active {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
+  max-height: 65vh;
+}
+
+.product-image.prev,
+.product-image.next,
+.product-image.outside {
+  transition: all 0.5s ease-in-out;
+  filter: blur(22.145px);
+}
+
+.product-image.prev {
+  display: block;
+  position: fixed;
+  top: 85%;
+  left: 92%;
+  transform: translate(-50%, -50%);
+  max-height: 20vh;
+}
+
+.product-image.next {
+  display: block;
+  position: fixed;
+  top: 15%;
+  left: 92%;
+  transform: translate(-50%, -50%);
+  max-height: 20vh;
+}
+
+.product-image.outside {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 125%;
+  transform: translate(-50%, -50%);
+  max-height: 20vh;
+}
