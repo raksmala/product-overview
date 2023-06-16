@@ -1,16 +1,20 @@
 $(document).ready(function() {
     const bodyClass = ['black', 'green', 'blue', 'pink'];
 
-    $('body').on('click', function() {
-        const currentClass = $(this).attr('class');
+    changeBackgroundColor = function() {
+        const currentClass = $('body').attr('class');
         const index = bodyClass.indexOf(currentClass);
         const nextIndex = (index + 1) % bodyClass.length;
 
-        $(this).removeClass(currentClass);
-        $(this).addClass(bodyClass[nextIndex]);
-    });
+        $('body').removeClass(currentClass);
+        $('body').addClass(bodyClass[nextIndex]);
+
+        $('.description-color').text(bodyClass[nextIndex].charAt(0).toUpperCase() + bodyClass[nextIndex].slice(1));
+    };
 
     $('.product-image').on('click', function() {
+        changeBackgroundColor();
+
         var $currentImage = $(this);
         var $nextImage = $currentImage.next();
 

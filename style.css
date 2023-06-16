@@ -15,7 +15,7 @@ body {
   &.blue,
   &.pink {
     color: var(--color-white);
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 1.5s ease-in-out;
   }
 
   &.black {
@@ -57,13 +57,90 @@ body {
   flex-direction: row;
 }
 
-.content,
+.content {
+  flex: 3;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 7%;
+  padding-right: 30%;
+}
+
+.content-logo,
+.content-title,
+.content-description {
+  display: block;
+}
+
+.content-title,
+.content-description,
+.content-price {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.content-title {
+  margin-top: 8rem;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 85px;
+  color: var(--color-white);
+}
+
+.content-description {
+  margin-top: 2rem;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: justify;
+  color: var(--color-white);
+}
+
+.content-price {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 85px;
+  color: var(--color-white);
+}
+
+.price-suffix {
+  margin-right: 0.5rem;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.content-social-media {
+  margin-top: 4rem;
+  display: flex;
+}
+
+.social-media-item {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.social-media-item i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .product {
-  flex: 1;
+  flex: 2;
 }
 
 .product-image {
   display: none;
+  cursor: pointer;
 }
 
 .product-image.active {
@@ -72,14 +149,14 @@ body {
   top: 50%;
   left: 75%;
   transform: translate(-50%, -50%);
-  transition: all 0.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
   max-height: 65vh;
 }
 
 .product-image.prev,
 .product-image.next,
 .product-image.outside {
-  transition: all 0.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
   filter: blur(22.145px);
 }
 
