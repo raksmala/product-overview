@@ -2,12 +2,12 @@ $(document).ready(function() {
     const bodyClass = ['black', 'green', 'blue', 'pink'];
 
     changeBackgroundColor = function() {
-        const currentClass = $('body').attr('class');
+        const currentClass = $('body').children().first().attr('class');
         const index = bodyClass.indexOf(currentClass);
         const nextIndex = (index + 1) % bodyClass.length;
 
-        $('body').removeClass(currentClass);
-        $('body').addClass(bodyClass[nextIndex]);
+        $('body').children().first().removeClass(currentClass);
+        $('body').children().first().addClass(bodyClass[nextIndex]);
 
         $('.description-color').text(bodyClass[nextIndex].charAt(0).toUpperCase() + bodyClass[nextIndex].slice(1));
     };
