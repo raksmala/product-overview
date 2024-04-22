@@ -7,6 +7,9 @@ import pink from "../img/pink.png";
 
 export default {
   title: "Main Page",
+  parameters: {
+    chromatic: { viewports: [1536, 960] }
+  }
 };
 
 export const Default = () => {
