@@ -1,4 +1,4 @@
-import './mainpage.css';
+import "./mainpage.css";
 import logo from "../img/logo.png";
 import black from "../img/black.png";
 import green from "../img/green.png";
@@ -8,8 +8,16 @@ import pink from "../img/pink.png";
 export default {
   title: "Main Page",
   parameters: {
-    chromatic: { viewports: [1536, 960] }
-  }
+    viewport: {
+      defaultViewport: "md",
+    },
+    chromatic: {
+      modes: {
+        lg: allModes["lg"],
+        xl: allModes["xl"],
+      },
+    },
+  },
 };
 
 export const Default = () => {
