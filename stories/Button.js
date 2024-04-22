@@ -9,8 +9,7 @@ export const createButton = ({
 }) => {
   const btn = document.createElement('button');
   btn.type = 'button';
-  // btn.innerText = label;
-  btn.innerText = 'Ini Button';
+  btn.innerText = label + 'woooff';
   btn.addEventListener('click', onClick);
 
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
