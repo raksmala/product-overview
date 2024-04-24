@@ -36,10 +36,10 @@ export const Default = () => {
               </div>
           </div>
           <div class="product">
-              <img src="${black}" alt="product" class="product-image active">
-              <img src="${green}" alt="product" class="product-image next">
-              <img src="${blue}" alt="product" class="product-image outside">
-              <img src="${pink}" alt="product" class="product-image prev">
+              <img src="${pink}" alt="product" class="product-image active">
+              <img src="${black}" alt="product" class="product-image next">
+              <img src="${green}" alt="product" class="product-image outside">
+              <img src="${blue}" alt="product" class="product-image prev">
           </div>
       </div>
   </div>`;
