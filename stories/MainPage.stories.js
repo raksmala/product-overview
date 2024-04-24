@@ -7,11 +7,8 @@ export default {
   },
 };
 
-export const MainPage = () => (
+export const HTMLComponent = () => (
   <div>
-    <iframe
-      src="../index.html"
-      style={{ width: "100%", height: "500px" }}
-    />
+    <iframe src="../index.html" style={{ width: '100%', height: '500px' }} />
   </div>
 );
