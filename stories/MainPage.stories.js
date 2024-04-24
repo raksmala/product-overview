@@ -1,12 +1,9 @@
-
+import React from 'react';
 
 export default {
-  title: "Main Page",
-  parameters: {
-    chromatic: { viewports: [1536] }
-  }
+  title: 'Index HTML',
 };
 
-export const Default = () => {
-  return `<iframe src="../index.html" style={{ width: '100%', height: '500px', border: 'none' }} />`;
-};
+export const Default = () => (
+  <iframe src="../index.html" style={{ width: '100%', height: '500px', border: 'none' }} />
+);
