@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default {
   title: "Main Page",
   parameters: {
@@ -8,7 +6,8 @@ export default {
 };
 
 export const HTMLComponent = () => (
-  <div>
-    <iframe src="../index.html" style={{ width: '100%', height: '500px' }} />
-  </div>
+  <iframe
+    src="../index.html"
+    style={{ width: "100%", height: "500px", border: "none" }}
+  />
 );
