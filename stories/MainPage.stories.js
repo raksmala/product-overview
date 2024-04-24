@@ -1,9 +1,4 @@
-import "./mainpage.css";
-import logo from "../img/logo.png";
-import black from "../img/black.png";
-import green from "../img/green.png";
-import blue from "../img/blue.png";
-import pink from "../img/pink.png";
+import React from 'react';
 
 export default {
   title: "Main Page",
