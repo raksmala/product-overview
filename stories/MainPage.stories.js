@@ -8,5 +8,5 @@ export default {
 };
 
 export const Default = () => {
-  return `<iframe src="http://localhost:3000/index.html" style={{ width: '100%', height: '500px', border: 'none' }} />`;
+  return `<iframe src="../index.html" style={{ width: '100%', height: '500px', border: 'none' }} />`;
 };
