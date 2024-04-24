@@ -14,7 +14,7 @@ export default {
 
 export const Default = () => {
   return `
-  <div class="pink">
+  <div class="black">
       <div class="eclipse"></div>
       <div class="container">
           <div class="content">
